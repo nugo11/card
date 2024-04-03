@@ -27,7 +27,7 @@ function App() {
       </div>
       <div className="right">
         <Inputs
-          input1={(event: string) => setname(event.target.value)}
+          input1={(event: React.ChangeEvent<HTMLInputElement>) => setname(event.target.value)}
           input2={(event: React.ChangeEvent<HTMLInputElement>) =>
             setBigNum(
               !event.target.value.replace(/[^0-9.]/g, "")

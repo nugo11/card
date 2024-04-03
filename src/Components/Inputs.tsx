@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 interface props {
-  input1: () => void;
-  input2: () => void;
-  input3: () => void;
-  input4: () => void;
-  input5: () => void;
+    input1: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    input2: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    input3: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    input4: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    input5: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export default function form(props: props) {
